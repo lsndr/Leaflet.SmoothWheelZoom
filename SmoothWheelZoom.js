@@ -97,7 +97,7 @@ L.Map.SmoothWheelZoom = L.Handler.extend({
             this._moved = true;
         }
 
-        map._move(this._center, this._zoom);
+        map._move(this._center, this._zoom, {flyTo: true});
         this._prevCenter = map.getCenter();
         this._prevZoom = map.getZoom();
 
